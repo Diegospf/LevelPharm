@@ -1,0 +1,222 @@
+	@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+	* {margin:0; padding: 0;}
+	html{
+		scroll-behavior: smooth;
+	}
+	
+/*BANNER*/
+	.banner{
+		background: url(../images/background.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		padding: 15%;
+		text-align: center;
+		margin: 0px;
+	}
+	
+	.banner h1{
+		font-family: 'Goldman';
+		font-weight: bold;
+		font-size: calc(8px + 4.5vw);
+		color: #193094;
+		margin-bottom: 1.5%;
+	}
+	.banner h3{
+		font-family: 'Goldman';
+		font-size: calc(4px + 2vw);
+		color: #193094;
+		margin-bottom: 5%;
+	}
+
+	.banner a{
+		text-decoration: none;
+	}
+   /* Botão */
+	.button{
+		padding: 1vh 4vw;
+		background-color: #193094;
+		font-size: calc(3.3px + 1.2vw);
+		color: white;
+		border-radius: 4px;
+		display: inline-block;
+		text-decoration: none;
+		font-weight: bolder;
+		font-family: 'Goldman';
+		box-shadow: 0 0 16px rgba(0,0,0,200);
+		transition-duration: 1s;
+	}
+
+	.button:hover{
+		transform: scale(1.1);
+		transition-duration: 2s;
+	}
+	/* SOBRE */
+
+	#img-sobre-container{
+		background-color: white;
+		text-align: center;
+		font-family: 'Goldman';
+		color: #193094;
+		font-size: calc(4px + 2vw);
+	}
+	
+   .sobre-container{
+		display: grid;
+   		grid-template-columns: 1fr 1fr;
+   		margin-left: 8%;
+   		margin-right: 8%;
+   		margin-bottom: 3%;
+   		text-align: center;
+	}
+
+	.item-sobre{
+		background-color: white;
+   		background-image: white;
+   		border-radius: 4px;
+   		padding: 4%;
+   		margin: 2%;
+   		flex-grow: 1;
+   		text-align: center;
+   		color: #193094;
+   		transition-duration: 1s;
+	}
+
+	.item-sobre img{
+   		background-size: cover;
+   		background-position: center;
+   		max-width:calc(50px + 20vw);
+    	max-height:calc(25px + 10vw);
+    	width: auto;
+    	height: auto;
+   	}
+
+   	#img-missao{
+   		grid-column: 1;
+   		grid-row: 1;
+   		z-index: 50;
+   	}
+
+   	#img-missao:hover{
+   		opacity: 0%;
+   	}
+
+   	#text-missao{
+   		grid-column: 1;
+   		grid-row: 1;
+   		color: #193094;
+   		padding-top: 10%;
+   		text-align: center;
+   		font-size: calc(4px + 1.5vw);
+   		z-index: 49;
+   	}
+
+      #img-visao{
+         grid-column: 2;
+         grid-row: 1;
+         z-index: 50;
+      }
+      #img-visao:hover{
+         transition-duration: 1.5s;
+         opacity: 0%;
+      }
+
+      #text-visao{
+         grid-column: 2;
+         grid-row: 1;
+         color: #193094;
+         padding-top: 10%;
+         text-align: center;
+         font-size: calc(4px + 1.5vw);
+         z-index: 49;
+      }
+
+   	#text-sobre{
+   		background-color: #193094;
+   		text-align: center;
+   		font-family: 'Goldman';
+   	}
+
+   	#text-sobre p{
+   		color: #ffffff;
+   		padding: 10%;
+   		text-align: center;
+   		font-size: calc(6px + 1.75vw);
+   	}
+	/* SERVIÇOS */
+	.serviços{
+		background-color: #ffffff;
+	}
+
+	.serviços h1{
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 0%;
+		font-family: 'Goldman';
+		color: #193094;
+		font-size: calc(10px + 3vw);
+	}
+	.serviços-container {
+   		display: grid;
+   		grid-template-columns: 1fr 1fr;
+   		grid-gap: 3vw;
+   		margin-left: 10%;
+   		margin-right: 10%;
+   		margin-bottom: 10%;
+   		margin-top: 3.5%;
+   		text-align: center;
+   }
+
+   .serviço{
+         background-color: white;
+         background-image: white;
+         box-shadow: 0 0 16px rgba(0,0,0,200);
+         border-radius: 4px;
+         padding: 4%;
+         margin: 2%;
+         flex-grow: 1;
+         text-align: center;
+         color: #193094;
+         transition-duration: 1s;
+    }
+
+   .serviço img{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 100%;
+         height: 10vw;
+         object-fit: cover;
+         border-radius: 4px;
+    }
+
+   .serviço h2{
+         font-size: calc(10px + 1.5vw);
+         font-family: 'Goldman';
+    }
+
+   .serviço p{
+        font-size: calc(6px + 1.1vw);
+        font-family: 'Goldman';
+   }
+
+
+	.serviço:hover{
+		color: inherit;
+		text-decoration: none;
+		transform: scale(1.05);
+   	transition-duration: 1.5s;
+   	box-shadow: 0 0 125px #193094;
+   	color: white;
+   	background-color: #193094;
+	}
+
+	img.img-scale{
+   	background-size: cover;
+   	background-position: center;
+   	max-width:calc(50px + 20vw);
+    	max-height:calc(25px + 10vw);
+    	width: auto;
+    	height: auto;
+   	}
