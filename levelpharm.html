@@ -7,16 +7,16 @@
 </head>
 <body>
 	
-	<header class="menu">
+	<header class="menu" id="menu">
 		<div class="menu-container">
+			<a class="logo" href="#"><img src="#" alt="logo"></a>
 			<nav class="menu-nav">
-					<div class="menu-logo">
-						<a class="logo" href="#"><img src="#" alt="logo"></a>
-					</div>
-					<div>
-					<a href="#img-sobre-container">Quem Somos</a>
-					<a href="#serviços-id">Serviços</a>
-					<a href="#">Contatos</a>
+				<div>
+					<ul>
+						<li><a href="#img-sobre-container">Quem Somos</a></li>
+						<li><a href="#serviços-id">Serviços</a></li>
+						<li><a href="#localizacao">Contatos</a></li>
+					</ul>
 				</div>	
 			</nav>
 		</div>
@@ -24,7 +24,7 @@
 
 	<main class="banner">
 		<h1>Saúde para Todos</h1>
-		<a href="#" class="button">Entrar em contato</a>
+		<a href="#localizacao" class="button">Entrar em contato</a>
 	</main>
 	
 	<section class="sobre">
@@ -81,16 +81,15 @@
 			</div>
 		</div>
 	</section>
-	
-	<aside id = "barra-lateral">
+	<aside id = "barra-lateral">  <!--CORRIGIR: referÊnciar sem poluir o css-->
                 <div class = "icone-contato">
-                    <li> <a href = "#contato"> <img src = "img/icone-contato.png" alt = "icone contato"/> </a> </li>
+                    <li> <a href = "#contato"> <img src = "assets/images/icone-contato.png" alt = "icone contato"/> </a> </li>
                     </div>
                 </aside>
             
             <section id = "localizacao">
                 <div class = "cont">
-                    <img class = "logo-central" src = "img/LOGO LEVELPHARM.png"/>
+                    <img class = "logo-central" src = "assets/images/LOGO LEVELPHARM.png"/>
                     <h3>Contato</h3>
                 </div>
 
@@ -102,19 +101,19 @@
                     <div class = "local-grid">
                         <form class = "formulario">
                             <label > <strong>Nome:</strong> </label>
-                            <input type = "text"/> 
+                            <input type = "text" placeholder = " " /> 
 
                             <label> <strong>E-mail:</strong> </label>
-                            <input type = "text"/>
+                            <input type = "text" placeholder = "" />
 
                             <label> <strong>Telefone:</strong> </label>
-                            <input type = "text"/>
+                            <input type = "text" placeholder = ""/>
 
                             <label> <strong>Assunto:</strong> </label>
-                            <input type: = "text">
+                            <input type: = "text" placeholder = "">
                             
                             <label> <strong>Deixe sua mensagem:</strong> </label>
-                            <textarea></textarea>
+                            <textarea style="resize: none"></textarea>
 
                             <input class = "botao-enviar" type = "submit" value = "Enviar"/>
 
@@ -124,13 +123,13 @@
             </section>
                
             <footer>
-                <div id = "rodape"> 
+                <div id = "rodape">  <!--CORRIGIR: colocar logo-->
                     <div class = " rodape-grid" > 
-                        <a href = "#menu-principal"> <img class = "logo-inferior" src = "img/LOGO LEVELPHARM.png"> </a>
+                        <a href = "#menu"> <img class = "logo-inferior" src = "assets/images/LOGO LEVELPHARM.png"> </a>
                     </div>
 
                     <div class = "rodape-grid">
-                        <div id = "contato"> 
+                        <div id = "contato">  <!--CONCLUIR-->
                             <h2>Entre em contato conosco</h2>
                             <br/>
                             <p>Endereço: Av. Prof. Moraes Rego, 844-900 - Cidade Universitária, <br/> Recife - PE, 50670-420</p>                                
@@ -140,16 +139,16 @@
                         
                     <div class = "rodape-grid">
                         <div class = "Redes">
-                            <li class = "redes-sociais"> <a href = "https://www.facebook.com/" target = "_blank"> <img  class = "fb" src = "img/icone-fb.png" alt = "icone facebook"/> </a> </li>
-                            <li class = "redes-sociais"> <a href = "https://www.instagram.com/" target = "_blank"> <img  class = "ig" src = "img/icone-instagram.png" alt = "icone instagram"/> </a></li>
-                            <li class = "redes-sociais"> <a href = "https://www.linkedin.com/" target = "_blank"> <img  class = "in" src = "img/icone-linkedin.png" alt = "icone linkedin"/> </a> </li>
-                            <li class = "redes-sociais"> <a href = "https://www.spotify.com/" target = "_blank"> <img  class = "sp" src = "img/icone-spotify.png" alt = "icone spotify"/> </a> </li>
+                            <li class = "redes-sociais"> <a href = "https://www.facebook.com/" target = "_blank"> <img  class = "fb" src = "assets/images/icone-fb.png" alt = "icone facebook"/> </a> </li>
+                            <li class = "redes-sociais"> <a href = "https://www.instagram.com/" target = "_blank"> <img  class = "ig" src = "assets/images/icone-instagram.png" alt = "icone instagram"/> </a></li>
+                            <li class = "redes-sociais"> <a href = "https://www.linkedin.com/" target = "_blank"> <img  class = "in" src = "assets/images/icone-linkedin.png" alt = "icone linkedin"/> </a> </li>
+                            <li class = "redes-sociais"> <a href = "https://www.spotify.com/" target = "_blank"> <img  class = "sp" src = "assets/images/icone-spotify.png" alt = "icone spotify"/> </a> </li>
                         </div>
                     </div>
                     
                 </div>
                 <div class = "copyright">
-                    <p> <img class = "icone-copyright" src = "img/copyright.png" alt = "icone-copyright"/> 2020 Level Pharm - Todos os direitos reservados</p>
+                    <p> <img class = "icone-copyright" src = "assets/images/copyright.png" alt = "icone-copyright"/> 2020 Level Pharm - Todos os direitos reservados</p>
                 </div>
             </footer>
 </body>
