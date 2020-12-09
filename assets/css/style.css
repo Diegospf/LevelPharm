@@ -36,20 +36,14 @@
     position: left;
     align-items: center;
     margin: 0vh 2vw;
-   
     font-family: Goldman;
     font-size: large;
-   }
-
-   .menu a:visited {
-       color: #193094;
-       text-decoration: none;
    }
 
    .menu ul li a {
     padding: 2px 10px;
     display: inline-block;
-
+    color: #193094;
     /* visual do link */
     text-decoration: none;
 }
@@ -61,6 +55,7 @@
       min-height: 40px;
       width: auto;
    }
+
 /*BANNER*/
 	.banner{
 		background: url(../images/background.jpg) no-repeat;
