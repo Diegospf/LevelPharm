@@ -57,13 +57,10 @@
    #logo-img{
       position: relative;
       bottom: 1%;
+      height: calc(20px + 9vh);
+      min-height: 40px;
+      width: auto;
    }
-   .logo-superior img{
-    
-    height: calc(20px + 9vh);
-    min-height: 40px;
-    width: auto;
-}
 /*BANNER*/
 	.banner{
 		background: url(../images/background.jpg) no-repeat;
@@ -278,8 +275,8 @@
    	max-width:calc(50px + 20vw);
     	max-height:calc(25px + 10vw);
     	width: auto;
-	height: auto;
-}
+    	height: auto;
+   	}
 
 /*FOOTER*/
 /*Contato fixo*/
@@ -312,6 +309,7 @@
     flex-direction: row;
     background-color: inherit;
 }
+
 .logo-central{
     width: 15%;
 
@@ -383,6 +381,7 @@ form{
     font-family: 'Goldman';
     font-size: calc(5px + 0.9vw);
 }
+
 .formulario textarea{
     margin: 1vh 0;
     height: calc(1px + 5vw);
@@ -415,8 +414,10 @@ form{
 }
 
 /*RODAPÉ*/
+
 footer {
-    background: linear-gradient( to left, #193094, #7bddee);
+    /*background: linear-gradient( to bottom, #193164, #193084 ,#3766b0);  /*Metálico-Azul*/
+    background: linear-gradient( to left, #193094, #7bddee);  /*Suave-Azul*/
     padding: calc(1px + 6vh) 0vw;
     z-index: 101;
     position: relative;
@@ -497,6 +498,7 @@ footer {
 
 .copyright{
     background-color: #193164;
+    /*background-color: #191034;  /*logo sem forma*/
     width: 100%;
     color: #ffffff;
     text-align: center;
@@ -509,23 +511,43 @@ footer {
     width: calc(1px + 1vw);
     border-radius: 10px;
 }
-@media (width: 323px){
+
+@media(max-device-width: 980px){
     .menu-nav ul li{
         margin: 0vh 0vw;
     }
     .menu ul{
+        display: flex;
+        flex-direction: row;
         top: 0vh;
+    }
+    .menu a{
+      font-size: calc(5px + 1.8vw);
+   }
+    #logo-img{
+        margin-top: 3.5vh;
+        min-height: 50px;
+        height: calc(10px + 5vh);
+        width: auto;
+    }
+
+  @media(max-device-width: 300px){
+     .menu-nav ul li{
+        margin: 0vh 0vw;
     }
     .menu ul{
         display: flex;
         flex-direction: row;
+        top: 0vh;
     }
     .menu a{
-        font-size: xx-small;
-    }   
+      font-size: calc(5px + 1.2vw);
+   }
     #logo-img{
         margin-top: 3.5vh;
-        width: 17vw;
-        height: 0.4vh;
+        min-height: 50px;
+        height: calc(10px + 5vh);
+        width: auto;
     }
+  }
 }
