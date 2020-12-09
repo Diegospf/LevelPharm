@@ -389,7 +389,8 @@ form{
     font-size: 3vh;
     height: calc( 1px + 6vh);
     width: 8vw;
-
+    min-height: 15px;
+    min-width: 40px;
     border-radius: 5px;
     box-shadow: 0 0 5px #193094;
 
